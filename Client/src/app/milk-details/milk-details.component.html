@@ -1,0 +1,22 @@
+<h1>Milk Details are given below</h1>
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Qty</th>
+        <th scope="col">Fat</th>
+        <th scope="col">SNF</th>
+        <th scope="col">Rate</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let x of milkdetails">
+            <td *ngIf="x.Qty">{{x.Qty}}</td>
+            <td *ngIf="x.Fat">{{x.Fat}}</td>
+            <td *ngIf="x.SNF">{{x.SNF}}</td>
+            <td *ngIf="x.Rate">{{x.Rate}}</td>
+            <td *ngIf="x.Amount">{{x.Amount}}</td>
+        </tr>
+    </tbody>
+</table>

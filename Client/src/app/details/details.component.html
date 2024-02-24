@@ -1,0 +1,50 @@
+<h1> Welcome to Details Page</h1>
+<div class="LogoutPage">
+    <button class="btn btn-success" (click)="getMilkDetails()">Click here to view all Details</button>
+    <nav routerLink="/HomePage">
+        <button class="btn btn-danger" >LogOut</button>
+    </nav>
+</div>
+<div class="formBoxCss">
+    <form [formGroup]="DetailsForm" (ngSubmit)="OnSubmit()">
+        <div class="MobileNoAndUserIDcss">
+            <div style="flex: 1;">
+                <label>MobileNo</label>
+                <input  type="text" class="form-control" formControlName="MobileNo" > 
+            </div>
+            <div style="flex: 1;">
+                <label>UserID</label>
+                <input type="text" class="form-control" formControlName="UserID" > 
+            </div>
+        </div>
+        <div>
+            <label>Name</label>
+            <input type="text" class="form-control" formControlName="Name" > 
+        </div>
+        
+        <div>
+            <label>Qty</label>
+            <input type="text" class="form-control" formControlName="Qty"> 
+        </div>
+        <div>
+            <label>Fat</label>
+            <input type="text" class="form-control" formControlName="Fat"> 
+        </div>
+        <div>
+            <label>SNF</label>
+            <input type="text" class="form-control" formControlName="SNF"> 
+        </div>
+        <div>
+            <label>Rate</label>
+            <input  type="text" class="form-control" formControlName="Rate"> 
+        </div>
+        <div>
+            <label>Amount</label>
+            <input  type="text" class="form-control" formControlName="Amount"> 
+        </div>
+        <div>
+            <button class="btn btn-primary"  type="submit">Submit</button>
+        </div>
+    </form>
+    
+</div>

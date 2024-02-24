@@ -1,0 +1,24 @@
+.MobileNoAndUserIDcss
+{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.formBoxCss
+{
+    width:500px;
+    height: 1000px;
+    align-items: center;
+}
+
+.LogoutPage
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.btn btn-danger
+{
+    margin-left: 20px;
+}

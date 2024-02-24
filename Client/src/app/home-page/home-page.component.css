@@ -1,0 +1,53 @@
+
+.welcomeText
+{
+    text-align: center;
+    
+}
+
+.HomePageCss
+{
+    margin-top: 100px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.NewUserCss
+{
+    margin-left: 5px;
+}
+
+.header
+{
+    position: fixed;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: 50px;
+    background-color: black;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.body
+{
+    padding-top: 80px;;
+}
+
+.buttonOfLogin
+{
+    flex:1;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeDiv
+{
+    flex:2;
+}

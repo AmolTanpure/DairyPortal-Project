@@ -1,0 +1,30 @@
+<h1>Welcome to Login Page</h1>
+<div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label>MobileNo</label>
+            <input type="text" class="form-control" formControlName="MobileNo">
+        </div>
+        <div *ngIf="loginForm.get('MobileNo')?.hasError('required') && loginForm.get('MobileNo')?.touched">
+            Enter Mobile Number
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <div class="passwordCss">
+                <input
+                type="{{ hidePassword ? 'password' : 'text' }}"
+                id="password"
+                class="form-control"
+                formControlName="Password"
+                />
+                <span (click)="togglePasswordVisibility()">
+                    <!--{{ hidePassword ? 'Show' : 'Hide' }} Password -->
+                    <img class="eyeImageClass" src="assets/eyeImage.jpg">
+                </span>
+            </div>
+            </div>
+        <div>
+            <button class="btn btn-primary" [disabled]="loginForm.invalid" type="submit">submit</button>
+        </div>
+    </form>
+</div>
