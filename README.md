@@ -20,8 +20,9 @@ The Dairy Portal Web Application is a web-based platform designed to capture and
 
 Client Folder:
 
- - src: Contains the source code of the Angular application, including components, services, modules, styles, and assets.
- - angular.json: Angular CLI configuration file specifying build and compilation settings.
+  - src: Contains the source code of the Angular application, including components, services, modules, styles, and assets.
+  - angular.json: Angular CLI configuration file specifying build and compilation settings.
+    
 Server Folder:
 
  - server.js: Main server-side file serving as the entry point for the Node.js application.
